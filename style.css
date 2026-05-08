@@ -17,9 +17,10 @@ body {
 header {
   width: 100%;
   height: 250px;
-  background-color: cyan;
+  background-color: rgb(0, 57, 97);
 }
 header nav {
+  border-bottom: 2px solid blue;
   width: 100%;
   height: 60px;
   background-color: white;
@@ -33,19 +34,37 @@ header nav img {
 header nav .navegando {
   margin: 0px 20px 0px auto;
 }
+header nav .navegando a {
+  margin: 0px 10px;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  color: blue;
+  padding: 10px;
+  border-radius: 5px;
+}
+header nav .navegando .selecionado {
+  background-color: blue;
+  color: white;
+}
 header h1 {
   width: 100%;
   height: calc(100% - 60px);
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-main {
-  width: 100%;
+.sobre_header {
   height: -moz-fit-content;
   height: fit-content;
+}
+
+main {
+  width: 100%;
+  height: 45%;
 }
 main .titulo_main {
   width: 100%;
@@ -78,14 +97,72 @@ main section .card_item {
   text-align: center;
 }
 main section img {
-  margin: 0px 0px 10px 0px;
+  margin: 10px 0px 10px 0px;
   width: 100px;
-  height: 100px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
 }
 main section button {
   margin: 0px 0px 10px 0px;
+  background-color: rgb(2, 172, 2);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 5px 10px;
+}
+main section button:active {
+  background-color: forestgreen;
+}
+
+.sobre_main {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-flow: wrap column;
+  align-items: center;
+  justify-content: center;
+}
+
+.msg {
+  width: 700px;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 5px 0px 20px 0px;
+  border: rgb(255, 255, 255) 1px solid;
+  box-shadow: 0px 0px 10px black;
+}
+.msg p {
+  margin: 10px 0px 0px 0px;
+}
+
+.msg_contato {
+  padding: 10px 20px;
+}
+.msg_contato h3:active {
+  color: red;
+}
+.msg_contato input {
+  width: 100%;
+  height: 30px;
+  margin: 10px 0px;
+  padding: 0px 10px;
+}
+.msg_contato textarea {
+  width: 100%;
+  height: 100px;
+}
+.msg_contato button {
+  width: 100%;
+  height: 30px;
+  background-color: rgb(8, 0, 242);
+  color: white;
+  border-radius: 10px;
+  border: none;
+  margin: 10px 0px;
 }
 
 footer {

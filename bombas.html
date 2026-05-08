@@ -1,33 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./bombas.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="funcoes.js" defer></script>
 </head>
 <body>
-    
-    <div class="navegacao">
-        
-        <img class="img" src="img/Windows.png" alt="logo">
-        <div>
-        <button>home</button>
-        <button>sobre</button>
-        <button>contato</button>  
+    <header>
+        <nav>
+        <img src="" alt="logo">
+        <div class="navegando">
+            <a href="bombas.html" class="selecionado">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html" >Contato</a>
         </div>
-    </div>
-
-    <div class="pai">
+        </nav>
         <h1>Bombas Hidráulicas</h1>
-    </div>
-     
-    <div class="filho">
-    <h2>Nossas soluções</h2>
-    <p>Trabalhamos com o que há de mais moderno em sistemas de bombeamento de água.</p>
-    </div>
+    </header>
 
-    
+    <main>
+        <div class="titulo_main">
+            <h3>Nossas Soluções</h3>
+            <p>Trabalhamos com o que há de mais moderno em sistemas de bombeamento de água.</p>
+        </div>
+        <section>
+            <div class="card_item">
+            <img src="img/1.jpg " alt="bomba 1">
+            <h4>Alta pressão</h4>
+            <p>Ideal para prédios e sistemas que exigem força total.</p>
+            <button onclick="alertar('Alta pressão')">Saiba mais</button>
+            </div>
+            <div class="card_item">
+            <img src="img/2.jpg" alt="bomba 2">
+            <h4>Submersíveis</h4>
+            <p>Bombas projetadas para trabalhar dentro da aǵua.</p>
+            <button onclick="alertar('Submersível')">Saiba mais</button>
+            </div>
+            <div class="card_item">
+            <img src="img/3.jpg" alt="bomba 3">
+            <h4>Manutenção</h4>
+            <p>Suporte técnico especializado para todos os modelos.</p>
+            <button onclick="alertar('Manutenção')">Saiba mais</button>
+            </div>
+        </section>
+    </main>
 
+    <footer>
+        <h3>Siga nossas redes sociais</h3>
+        <div class="redes">
+            <img src="img/Facebook_logo_(square).png" alt="Facebook">
+            <img src="img/Instagram_icon.png" alt="Instagram">
+            <img src="img/Youtube_logo.png" alt="Youtube">
+        </div>
+        <p>© 2026 Hidráuliica Pro Brasil - Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
