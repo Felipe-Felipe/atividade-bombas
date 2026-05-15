@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
     <link rel="stylesheet" href="style.css">
+    <script src="funcoes.js" defer></script>
 </head>
 <body>
      <header class="sobre_header">
@@ -19,21 +20,15 @@
         </nav>
     </header>
 
-    <main>
-         <div class="card">
-            <img src="" alt="logo">
-            <h1> Login</h1>
-
-            <div class="campo">
-            <input type="email" placeholder="Seu email">
-        </div>
-
-            <div class="campo">
-            <input type="text" placeholder="digite sua senha">
-        </div>
-            <button onclick="acessar()" class="btn_enviar">Acessar</button>
-            
-         </div>
+    <main class="login_main">
+        <form action="" class="login_form">
+            <img src="img/Windows.png" alt="">
+            <h2>Login</h2>
+            <input id="email" type="email" placeholder="insira seu email">
+            <input id="senha" type="password" placeholder="insira sua senha">
+            <button>Acessar</button>
+            <a href="index.html">voltar</a>
+        </form>
     </main>
 </body>
 </html>

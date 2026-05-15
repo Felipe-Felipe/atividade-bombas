@@ -2,26 +2,25 @@ function alertar(mensagem) {
     alert(mensagem);
 }
 
-function acessar() {
-    const email = document.querySelector('input[type="email"]');
-    const senha = document.querySelector('input[text= "text"]');
+const email = document.getElementById("email")
+const senha = document.getElementById("senha")
+const form = document.querySelector(".login_form")
 
-    let valido = true;
+let registro_senha = "069817" 
+let registro_email = "admin@admin" 
 
-    [email, senha].forEach((campo) => {
-        if (!cqmpo.value.trim()) {
-            campo.style.border = "2px solid red";
-            valido = false;
-        } else {
-         campo.style.border = "2px solid green";
-        }
-});
 
-    if (valido) {
-        window.open("index.html", "_self");
-    }
-    
+form.addEventListener("submit",(e)=>{
+e.preventDefault()
+// console.log(email.value);
+// console.log(senha.value);
 
-   
-
+if(registro_senha == senha.value && registro_email == email.value )
+{
+    alert("login com sucesso!")
+    window.location.href = "bemvindo.html"
 }
+else {
+    alert("dados incorretos")
+}
+})
