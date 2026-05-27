@@ -286,6 +286,7 @@ footer p {
   flex-direction: column;
   padding: 10px;
   align-items: center;
+  gap: 10px;
 }
 .dashboard_body main nav button {
   width: 95%;
@@ -295,6 +296,7 @@ footer p {
   border-radius: 5px;
   border: none;
   font-weight: bold;
+  cursor: pointer;
 }
 .dashboard_body main .display_dashboard_main {
   width: 85%;
@@ -304,14 +306,17 @@ footer p {
   justify-content: center;
   background-color: gainsboro;
 }
-.dashboard_body main .display_dashboard_main .mensagem {
+.dashboard_body main .display_dashboard_main .mensagem, .dashboard_body main .display_dashboard_main .pesquisar_bombas {
   background-color: white;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
   padding: 30px 60px;
   border-radius: 10px;
 }
-.dashboard_body main .display_dashboard_main .mensagem h1 {
+.dashboard_body main .display_dashboard_main .mensagem h1, .dashboard_body main .display_dashboard_main .pesquisar_bombas h1 {
   color: blue;
   margin-bottom: 5px;
+}
+.dashboard_body main .display_dashboard_main .mensagem {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

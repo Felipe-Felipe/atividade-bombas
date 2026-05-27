@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script type="module" src="./funcoes.js" defer></script>
 </head>
 <body class="dashboard_body">
     <header>
@@ -13,14 +14,25 @@
     </header>
     <main>
         <nav>
-            <button>Consultar Produto</button>
+            <button class="btn_dash">Bem vindo</button>
+            <button class="btn_dash">Consultar Produto</button>
         </nav>
         <div class="display_dashboard_main">
             <div class="mensagem">
                 <h1>Bem vindo</h1>
                 <p>Escolha uma opção no bagulho</p>
             </div>
+            <div class="pesquisar_bombas">
+                <h1>Pesquisar</h1>
+                <form action="">
+                    <label for="">Pesquisar Bomba por ID</label>
+                    <input type="number"/>
+                </form>
+                <img src="" alt="Bomba (hidraulica)">
+                <p>Nome da bomba</p>
+            </div>
         </div>
     </main>
+    
 </body>
 </html>
