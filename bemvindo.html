@@ -20,16 +20,18 @@
         <div class="display_dashboard_main">
             <div class="mensagem">
                 <h1>Bem vindo</h1>
-                <p>Escolha uma opção no bagulho</p>
+                <p>Escolha uma opção no menu lateral</p>
             </div>
             <div class="pesquisar_bombas">
                 <h1>Pesquisar</h1>
-                <form action="">
+                <form class="buscarbombas" action="">
                     <label for="">Pesquisar Bomba por ID</label>
-                    <input type="number"/>
+                    <input type="number" id="idBomba"/>
+                    <button type="submit">Pesquisar</button>
                 </form>
-                <img src="" alt="Bomba (hidraulica)">
-                <p>Nome da bomba</p>
+                <img id="imgBomba" src="" alt="Bomba (hidraulica)">
+                <p id="nomeBomba"></p>
+                <p id="precoBomba"></p>
             </div>
         </div>
     </main>

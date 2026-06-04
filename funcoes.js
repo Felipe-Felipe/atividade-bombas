@@ -1,8 +1,5 @@
 import bombas from "./todas_bombas.js";
 
-function alertar(mensagem) {
-  alert(mensagem);
-}
 
 //codigos da tela de login
 const email = document.getElementById("email");
@@ -15,6 +12,8 @@ let registro_email = "admin@admin";
 const mensagem_inicio = document.querySelector(".mensagem");
 const consultador = document.querySelector(".pesquisar_bombas");
 const btns_dash = document.querySelectorAll(".btn_dash");
+const form_pesquisa = document.querySelector(".buscarbombas");
+
 
 btns_dash.forEach((btn, index) => {
   btn.addEventListener("click", () => {
@@ -22,6 +21,8 @@ btns_dash.forEach((btn, index) => {
     mudar_dashboard(index);
   });
 });
+
+
 
 function mudar_dashboard(item) {
   switch (item) {
@@ -48,3 +49,34 @@ if (form) {
     }
   });
 }
+
+const imgBomba = document.getElementById("imgBomba");
+const nomeBomba = document.getElementById("nomeBomba");
+const precoBomba = document.getElementById("precoBomba");
+
+form_pesquisa.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const id = Number(document.getElementById("idBomba").value);
+
+    if (id > 0 && id <= bombas.length) {
+
+        const bomba = bombas[id - 1];
+
+        imgBomba.src = bomba.imagem;
+        imgBomba.alt = bomba.bomba;
+
+        nomeBomba.textContent = bomba.bomba;
+        precoBomba.textContent = bomba.preço;
+
+    } else {
+        alert(`ID inválido. Digite um número entre 1 e ${bombas.length}`);
+
+        imgBomba.src = "";
+        nomeBomba.textContent = "";
+        precoBomba.textContent = "";
+    }
+});
+
+
+
